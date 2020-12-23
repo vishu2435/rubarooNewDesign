@@ -1,0 +1,16 @@
+.content{
+    text-align: center;
+    margin-top: 30px;
+
+}
+.content h1{
+    font-weight: 600;
+    font-size: 80px;
+}
+.content {
+    padding: 40px;
+}
+.content span{
+    font-weight: 600;
+    font-size: 20px;
+}

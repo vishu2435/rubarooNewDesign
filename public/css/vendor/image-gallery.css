@@ -1,0 +1,149 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 80px;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.row > .column{
+    padding: 8px 10px;
+}
+.row:after{
+    content:'';
+    display: table;
+    clear:both;
+}
+.column{
+    float: left;
+    width: 28%;
+}
+.model{
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 100px;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+.model-content{
+    display: none;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+.close{
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight:bold ;
+}
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides{
+    display: none;
+}
+.prev,.next{
+    position: absolute;
+    color: black;
+    z-index: 200;
+    height: 50px;
+    width: 50px;
+    color: white;
+    cursor: pointer;
+}
+.prev{
+    position: absolute;
+    top: 50%;
+    left:3%;
+}
+.prev>span,.next>span{
+    position: relative;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    background-color: white;
+    color: white;
+    
+}
+.prev>span{
+    transform: translateX(25px) rotate(-45deg);
+}
+.next>span{
+    transform: translate(25px,20px) rotate(135deg);
+}
+.next{
+    top: 50%;
+    right: 3%;
+}
+.span-arrow:before,.span-arrow:after{
+    position: absolute;
+    content: '';
+    width: 34px;
+    right: 0px;
+    
+    bottom: 0;
+    height: 3px;
+    background-color: white;
+}
+.span-arrow:after{
+    transform: rotate(90deg) translate(15px,0);
+}
+.span-arrow::before{
+    transform: translate(15px,0);
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+    cursor: pointer;
+}
+  
+  .hover-shadow:hover {
+      
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
